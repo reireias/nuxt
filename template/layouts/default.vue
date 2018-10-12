@@ -12,12 +12,12 @@
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-        clipped: false,
-        title: 'Vuetify.js'
-      }
+export default {
+  data() {
+    return {
+      clipped: false,
+      title: 'Vuetify.js'
     }
   }
+}
 </script>

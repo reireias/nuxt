@@ -26,14 +26,13 @@ export default {
       },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'
+        href:
+          'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'
       }
     ]
   },
   plugins: ['~/plugins/vuetify.js'],
-  css: [
-    '~/assets/style/app.styl'
-  ],
+  css: ['~/assets/style/app.styl'],
   /*
   ** Customize the progress bar color
   */
