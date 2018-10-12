@@ -42,24 +42,11 @@ export default {
   ** Build configuration
   */
   build: {
-    {{#alacarte}}
-    transpile: [/^vuetify/],
-    babel: {
-      plugins: [
-        ['transform-imports', {
-          'vuetify': {
-            'transform': 'vuetify/es5/components/${member}',
-            'preventFullImport': true
-          }
-        }]
-      ]
-    },
-    {{/alacarte}}
     extractCSS: true,
     /*
     ** Run ESLint on save
     */
-    extend(config, {isDev}) {
+    extend(config, { isDev }) {
       if (isDev && process.client) {
         config.module.rules.push({
           enforce: 'pre',
@@ -68,15 +55,6 @@ export default {
           exclude: /(node_modules)/
         })
       }
-      {{#alacarte}}
-      if (process.server) {
-        config.externals = [
-          nodeExternals({
-            whitelist: [/^vuetify/]
-          })
-        ]
-      }
-      {{/alacarte}}
     }
   }
 }
