@@ -3,6 +3,10 @@ language: node_js
 node_js:
   - "node"
 cache: yarn
+addons:
+  apt:
+    packages:
+      - expect
 install:
   - yarn global add @vue/cli @vue/cli-init
 script:
