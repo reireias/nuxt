@@ -6,4 +6,7 @@ cache: yarn
 install:
   - yarn global add @vue/cli @vue/cli-init
 script:
-  - vue init reireias/nuxt test
+  - ./vue-cli-install-test.exp
+  - cd test
+  - yarn install
+  - yarn build
