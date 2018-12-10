@@ -9,7 +9,6 @@ env:
 extends:
   - 'eslint:recommended'
   - 'plugin:vue/recommended'
-  - 'plugin:prettier/recommended'
 plugins:
   - 'vue'
 rules:
@@ -21,3 +20,15 @@ rules:
   vue/component-name-in-template-casing:
     - 'error'
     - 'kebab-case'
+  vue/max-attributes-per-line:
+    - 'error'
+    - singleline: 3
+      multiline:
+        max: 1
+        allowFirstLine: false
+  vue/singleline-html-element-content-newline:
+    - 'error'
+    - ignoreWhenNoAttributes: true
+      ignores:
+        - 'pre'
+        - 'textarea'
