@@ -9,6 +9,7 @@ env:
 extends:
   - 'eslint:recommended'
   - 'plugin:vue/recommended'
+  - '@nuxtjs'
 plugins:
   - 'vue'
 rules:

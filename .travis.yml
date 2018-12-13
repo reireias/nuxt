@@ -13,4 +13,5 @@ script:
   - ./vue-cli-install-test.exp
   - cd test
   - yarn install
+  - yarn lint
   - yarn build
