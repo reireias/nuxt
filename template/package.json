@@ -18,8 +18,8 @@
     }
   },
   "dependencies": {
+    "@nuxtjs/vuetify": "^0.5.5",
     "nuxt": "^2.3.4",
-    "vuetify": "^1.3.12",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1"
   },

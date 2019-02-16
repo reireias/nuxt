@@ -31,7 +31,9 @@ export default {
       }
     ]
   },
-  plugins: ['~/plugins/vuetify.js'],
+  modules: [
+    '@nuxtjs/vuetify'
+  ],
   css: ['~/assets/style/app.styl'],
   /*
   ** Customize the progress bar color
